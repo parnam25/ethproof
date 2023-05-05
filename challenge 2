@@ -1,0 +1,18 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18;
+contract challenge{
+    uint usereth;
+    uint userwei;
+    uint usergwei;
+    function getehter(uint _eht)public {
+        usereth=_eht;
+    }
+    function getUserwie() public    returns(uint){
+         userwei=usereth*(10**18);
+         return userwei;
+    }
+    function getUsergwei() public    returns(uint){
+         usergwei=usereth*(10**9);
+         return usergwei;
+    }
+}
